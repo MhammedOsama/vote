@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 
-
 body,
 h1,
 h2,
@@ -21,17 +20,14 @@ dd {
   margin: 0;
 }
 
-
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
-
 
 html:focus-within {
   scroll-behavior: smooth;
 }
-
 
 body {
   min-height: 100vh;
@@ -40,16 +36,15 @@ body {
 }
 
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
-
 
 img,
 picture {
   max-width: 100%;
   display: block;
 }
-
 
 input,
 button,
@@ -63,12 +58,12 @@ select {
     scroll-behavior: auto;
   }
 
-
-
   *,
   *::before,
   *::after {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
